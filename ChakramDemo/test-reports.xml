@@ -1,0 +1,19 @@
+<testsuite name="Mocha Tests" tests="7" failures="1" errors="1" skipped="0" timestamp="Mon, 24 Oct 2016 15:54:03 GMT" time="0.696">
+<testcase classname="Random User API" name="should return 200 on success" time="0.095"/>
+<testcase classname="Random User API" name="actual body1" time="0"/>
+<testcase classname="Random User API" name="actual body2" time="0"/>
+<testcase classname="Random User API" name="actual body3" time="0"/>
+<testcase classname="Random User API" name="actual body4" time="0"/>
+<testcase classname="Chakram" name="should support sequential API interaction" time="0.187"><failure>expected 'Old Thing Back (feat. Ja Rule and Ralph Tresvant)' to include 'Old Thing Backy'
+AssertionError: expected 'Old Thing Back (feat. Ja Rule and Ralph Tresvant)' to include 'Old Thing Backy'
+    at tests\chakram.js:50:38
+    at _fulfilled (node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (node_modules\q\q.js:796:13)
+    at node_modules\q\q.js:604:44
+    at runSingle (node_modules\q\q.js:137:13)
+    at flush (node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)</failure></testcase>
+<testcase classname="Chakram" name="should support sequential API interaction" time="0.113"/>
+</testsuite>
