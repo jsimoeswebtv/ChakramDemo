@@ -15,6 +15,7 @@
     "mochawesome": "^1.5.3"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --recursive -R xunit tests/ > test-reports.xml"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit tests/ > test-reports.xml",
+    "testhtml": "./node_modules/.bin/mocha --recursive --reporter mochawesome --reporter-options reportDir=htmlReport,reportName=ChakramDemoReport,reportTitle=ChakramDemo Title,inlineAssets=true"
   }
 }
