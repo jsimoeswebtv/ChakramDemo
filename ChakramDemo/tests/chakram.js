@@ -1,65 +1,38 @@
 ﻿var chakram = require('..\\node_modules\\chakram\\lib\\chakram.js'),
     expect = chakram.expect;
-describe("Random User API", function () {
-    var apiResponse;
-    
-    before(function () {
-        apiResponse = chakram.get("http://freegeoip.net/json/yahoo.com");
-        
-        return apiResponse;
-    });
-    
-    
-    it("should return 200 on success", function () {
-        
-        return expect(apiResponse).to.have.status(200);
-    });
-    it("actual body1", function () {
-    
-    
-    
-    });
-    it("actual body2", function () {
-    
-     
-    
-    });
-    it("actual body3", function () {
-    
-     
-    
-    });
-    it("actual body4", function () {
-    
-     
-    
-    });
-});
 
-describe("Chakram", function () {
+
+describe("Api", function () {
     
-    it("should support sequential API interaction", function () {
-        var artist = "Notorious B.I.G.";
-        return chakram.get("https://api.spotify.com/v1/search?q=" + artist + "&type=artist")
+    it("Sum 2 numbers", function () {
+        var num1 = 100;
+        var num2 = 500;
+        return chakram.get("http://localhost:3000/sum?num1=" + num1 + "&num2=" + num2)
     .then(function (searchResponse) {
-            var bigID = searchResponse.body.artists.items[0].id;
-            return chakram.get("https://api.spotify.com/v1/artists/" + bigID + "/top-tracks?country=GB");
-        })
-    .then(function (topTrackResponse) {
-            var topTrack = topTrackResponse.body.tracks[0];
-            expect(topTrack.name).to.contain("Old Thing Back");
+            
+            expect(searchResponse).to.have.json('result', num1+num2);
         });
+    
     });
-    it("should support sequential API interaction", function () {
-        var artist = "Notorious B.I.G.";
-        return chakram.get("https://api.spotify.com/v1/search?q=" + artist + "&type=artist")
+    it("Sub 2 numbers", function () {
+        var num1 = 1000;
+        var num2 = 500;
+        return chakram.get("http://localhost:3000/sub?num1=" + num1 + "&num2=" + num2)
     .then(function (searchResponse) {
-            var bigID = searchResponse.body.artists.items[0].id;
-            return chakram.get("https://api.spotify.com/v1/artists/" + bigID + "/top-tracks?country=GB");
-        })
-    .then(function (topTrackResponse) {
-            var topTrack = topTrackResponse.body.tracks[0];
-            expect(topTrack.name).to.contain("Old Thing Back");
+            
+            expect(searchResponse).to.have.json('result', num1 - num2);
         });
+    
     });
+    it("Mult 2 numbers", function () {
+        var num1 = 100;
+        var num2 = 500;
+        return chakram.get("http://localhost:3000/mul?num1=" + num1 + "&num2=" + num2)
+    .then(function (searchResponse) {
+            
+            expect(searchResponse).to.have.json('result', num1 * num2);
+        });
+    
+    });
+    
 });
