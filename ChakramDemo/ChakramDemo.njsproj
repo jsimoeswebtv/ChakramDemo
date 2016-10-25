@@ -33,6 +33,7 @@
     <Compile Include="routes\routes.js" />
     <Compile Include="server.js" />
     <Compile Include="tests\chakram.js" />
+    <Content Include=".gitignore" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
