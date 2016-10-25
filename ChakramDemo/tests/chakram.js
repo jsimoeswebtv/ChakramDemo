@@ -47,7 +47,7 @@ describe("Chakram", function () {
         })
     .then(function (topTrackResponse) {
             var topTrack = topTrackResponse.body.tracks[0];
-            expect(topTrack.name).to.contain("Old Thing Backy");
+            expect(topTrack.name).to.contain("Old Thing Back");
         });
     });
     it("should support sequential API interaction", function () {

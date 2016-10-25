@@ -16,6 +16,6 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive -R xunit tests/ > test-reports.xml",
-    "testhtml": "./node_modules/.bin/mocha tests/ --recursive --reporter mochawesome --reporter-options reportDir=htmlReport,reportName=ChakramDemoReport,inlineAssets=true"
+    "testhtml": "./node_modules/.bin/mocha tests/ --recursive --reporter mochawesome --reporter-options reportDir=htmlReport,reportName=ChakramDemoReport"
   }
 }
