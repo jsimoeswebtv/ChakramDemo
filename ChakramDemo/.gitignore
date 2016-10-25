@@ -116,6 +116,7 @@ AppPackages/
 
 # Others
 *.Cache
+*.dat
 ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
