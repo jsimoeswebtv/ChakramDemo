@@ -15,7 +15,7 @@ router.get('/sum', function (req, res) {
 router.get('/sub', function (req, res) {
     var num1 = parseInt(req.param('num1'), 10);
     var num2 = parseInt(req.param('num2'), 10);
-    var result = num1 - num2;
+    var result = num1 - num1;
     var jsonObject = {
         "result": result
     };
