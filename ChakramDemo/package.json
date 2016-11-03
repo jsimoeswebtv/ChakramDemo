@@ -1,12 +1,13 @@
 {
   "name": "ChakramDemo",
+  "private": true,
   "version": "0.0.0",
   "description": "ChakramDemo",
   "main": "server.js",
+  "license": "MIT",
   "author": {
     "name": "jsimoes",
-    "email": "",
-    "private": true
+    "email": "jsimoes@libertyglobal.com"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
