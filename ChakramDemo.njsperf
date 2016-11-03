@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>1568dc0c-fbf4-48e0-9ee1-b06dc7c86170</TargetProject>
+    <FriendlyName>ChakramDemo</FriendlyName>
+  </ProjectTarget>
+  <Reports>
+    <Report>
+      <Filename>C:\Users\jsimoes\Source\Repos\ChakramDemo\ChakramDemo_20161102.vspx</Filename>
+    </Report>
+  </Reports>
+</ProfilingTarget>

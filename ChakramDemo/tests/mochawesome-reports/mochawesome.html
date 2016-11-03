@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">tests</h1>
+          <h3 class="report-date">Wednesday, October 26 2016, 01:26pm</h3>
+        </div>
+        <div class="nav-right">
+          <div class="quick-summary-cnt">
+              <ul class="list-unstyled quick-summary">
+                <li class="qs-item summary-duration" title="Duration">305<span>MS</span></li>
+                <li class="qs-item summary-suites" title="Suites">1</li>
+                <li class="qs-item summary-tests" title="Tests">4</li>
+                <li class="qs-item summary-passes" title="Passed" data-filter="passed">1</li>
+                <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+                <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+              </ul>          </div>
+          <button class="nav-menu-btn open-menu"><i class="icon-menu"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">305<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Suite</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">4</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar has-skipped-tests">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-skipped danger">3 Skipped Tests</div>
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct danger">25% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="341c5beb-ec20-4324-9cd1-27a0a864c15b" class="suite has-tests has-skipped">
+            <h3 class="suite-title">Api simple operations</h3>
+            <h5 class="suite-filename">\chakram.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="341c5beb-ec20-4324-9cd1-27a0a864c15b" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="0" data-total-pending="0" data-total-skipped="3"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">0</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#341c5beb-ec20-4324-9cd1-27a0a864c15b-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="341c5beb-ec20-4324-9cd1-27a0a864c15b-test-list" class="list-group test-list collapse in">
+                    <div id="c4d66992-2e2d-4f0d-8d73-b21eba2fe144" class="list-group-item test skipped">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Sum 2 numbers
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c4d66992-2e2d-4f0d-8d73-b21eba2fe144 > .test-code.collapse">Code</button>
+              <span class="test-duration ">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> num1 = <span class="hljs-number">100</span>;<br><span class="hljs-keyword">var</span> num2 = <span class="hljs-number">500</span>;<br><span class="hljs-keyword">return</span> chakram.get(<span class="hljs-string">"http://localhost:3000/sum?num1="</span> + num1 + <span class="hljs-string">"&amp;num2="</span> + num2)<br>    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">searchResponse</span>) </span>{<br>    <br>    expect(searchResponse).to.have.json(<span class="hljs-string">'result'</span>, num1 + num2);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="998b6714-6f9e-4386-8366-fc973b560eba" class="list-group-item test skipped">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Sub 2 numbers
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#998b6714-6f9e-4386-8366-fc973b560eba > .test-code.collapse">Code</button>
+              <span class="test-duration ">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> num1 = <span class="hljs-number">1000</span>;<br><span class="hljs-keyword">var</span> num2 = <span class="hljs-number">500</span>;<br><span class="hljs-keyword">return</span> chakram.get(<span class="hljs-string">"http://localhost:3000/sub?num1="</span> + num1 + <span class="hljs-string">"&amp;num2="</span> + num2)<br>    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">searchResponse</span>) </span>{<br>    <br>    expect(searchResponse).to.have.json(<span class="hljs-string">'result'</span>, num1 - num2);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="d686ca08-25b0-43dd-8ab1-eb167e0b4a97" class="list-group-item test skipped">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Mult 2 numbers
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d686ca08-25b0-43dd-8ab1-eb167e0b4a97 > .test-code.collapse">Code</button>
+              <span class="test-duration ">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> num1 = <span class="hljs-number">100</span>;<br><span class="hljs-keyword">var</span> num2 = <span class="hljs-number">500</span>;<br><span class="hljs-keyword">return</span> chakram.get(<span class="hljs-string">"http://localhost:3000/mul?num1="</span> + num1 + <span class="hljs-string">"&amp;num2="</span> + num2)<br>    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">searchResponse</span>) </span>{<br>    <br>    expect(searchResponse).to.have.json(<span class="hljs-string">'result'</span>, num1 * num2);<br>});</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="c7c8b15f-ab6d-42c0-9420-8d56d5a2b119" class="suite has-tests has-passed">
+            <h3 class="suite-title">Api complex operations</h3>
+            <h5 class="suite-filename">\chakram.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="c7c8b15f-ab6d-42c0-9420-8d56d5a2b119" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">294 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#c7c8b15f-ab6d-42c0-9420-8d56d5a2b119-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="c7c8b15f-ab6d-42c0-9420-8d56d5a2b119-test-list" class="list-group test-list collapse in">
+                    <div id="9c29b009-f187-4169-86c9-90948c93486e" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Sum 2 numbers and multiply result by num3
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#9c29b009-f187-4169-86c9-90948c93486e > .test-code.collapse">Code</button>
+              <span class="test-duration slow">294 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"><span class="hljs-keyword">var</span> num1 = <span class="hljs-number">100</span>;<br><span class="hljs-keyword">var</span> num2 = <span class="hljs-number">500</span>;<br><span class="hljs-keyword">var</span> num3 = <span class="hljs-number">200</span>;<br><span class="hljs-keyword">var</span> result = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">return</span> chakram.get(<span class="hljs-string">"http://localhost:3000/sum?num1="</span> + num1 + <span class="hljs-string">"&amp;num2="</span> + num2)<br>    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">firstResponse</span>) </span>{<br>    result = firstResponse.body.result;<br>    <span class="hljs-keyword">return</span> chakram.get(<span class="hljs-string">"http://localhost:3000/mul?num1="</span> + num3 + <span class="hljs-string">"&amp;num2="</span> + result);<br>   <br>   <br>})<br>    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">finalResponse</span>) </span>{<br>    <span class="hljs-keyword">var</span> final = finalResponse.body.result;<br>    expect(finalResponse).to.have.json(<span class="hljs-string">'result'</span>, num3 * result);<br>})</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu-wrap">
+      <div class="menu-overlay close-menu"></div>
+      <nav class="menu">
+        <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
+        <ul class="list-unstyled main-menu">
+                <li class="nav-menu-item">
+                <a href="#341c5beb-ec20-4324-9cd1-27a0a864c15b" class="nav-menu-item-link has-skipped">Api simple operations</a>
+            </li>
+                <li class="nav-menu-item">
+                <a href="#c7c8b15f-ab6d-42c0-9420-8d56d5a2b119" class="nav-menu-item-link has-passes">Api complex operations</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
