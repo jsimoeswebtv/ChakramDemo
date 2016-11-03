@@ -9,7 +9,7 @@
 *.sln.docstates
 
 # Build results
-
+node_modules/
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -145,7 +145,7 @@ UpgradeLog*.htm
 *.txt~
 *.swp
 *.swo
- 
+
 # svn
 .svn
 
