@@ -14,10 +14,11 @@
     "chakram": "^1.5.0",
     "express": "^4.14.0",
     "mocha": "^3.1.2",
-    "mochawesome": "^1.5.3"
+    "mochawesomeplusplus": "^1.2.1",
+    "webdriverio": "^4.3.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --recursive -R xunit tests/ > test-reports.xml",
-    "testhtml": "./node_modules/.bin/mocha tests/ --recursive --reporter mochawesome --reporter-options reportDir=htmlReport,reportName=ChakramDemoReport"
+    "testhtml": "./node_modules/.bin/mocha tests/ --recursive --reporter mochawesomeplusplus --reporter-options reportDir=htmlReport,reportName=ChakramDemoReport"
   }
 }

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">ChakramDemo</h1>
+          <h3 class="report-date">Thursday, November 3 2016, 02:30pm</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">5.229<span>S</span></li>
+              <li class="qs-item summary-suites" title="Suites">2</li>
+              <li class="qs-item summary-tests" title="Tests">5</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">0</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">5</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">5.229<span>S</span></h1>
+              <h4 class="summary-label">S</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">2</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">5</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">5</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct danger">0% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="4b1158a2-0493-4637-99af-b713d71c969d" class="suite has-tests has-failed">
+            <h3 class="suite-title">Api simple operations</h3>
+            <h5 class="suite-filename">\tests\chakram.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="4b1158a2-0493-4637-99af-b713d71c969d" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="3" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">3.208 s</li>
+                <li class="suite-summary-item tests">3</li>
+                <li class="suite-summary-item passed">0</li>
+                <li class="suite-summary-item failed">3</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#4b1158a2-0493-4637-99af-b713d71c969d-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="4b1158a2-0493-4637-99af-b713d71c969d-test-list" class="list-group test-list collapse in">
+                    <div id="ddb4009f-3e38-4d40-bd11-d5de090f908f" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Sum 2 numbers 1000 + 500
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ddb4009f-3e38-4d40-bd11-d5de090f908f > .test-code.collapse">Code</button>
+              <span class="test-duration ">1.197 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">TypeError: Cannot read property &#x27;statusCode&#x27; of undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#ddb4009f-3e38-4d40-bd11-d5de090f908f > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><span class="hljs small">Difference between Expected(+) and Actual(-):
+        TypeError: Cannot read property 'statusCode' of undefined
+        
+        Expected:
+        undefined
+        
+        Actual:
+        undefined
+        
+        Stack:
+        TypeError: Cannot read property 'statusCode' of undefined<br>    at .&lt;anonymous&gt; (node_modules\chakram\lib\assertions\statuscode.js:15:44)<br>    at ctx.(anonymous function) (node_modules\chai\lib\chai\utils\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (node_modules\chai-as-promised\lib\chai-as-promised.js:296:33)<br>    at .&lt;anonymous&gt; (node_modules\chai-as-promised\lib\chai-as-promised.js:255:21)<br>    at ctx.(anonymous function) [as status] (node_modules\chai\lib\chai\utils\overwriteMethod.js:49:33)<br>    at tests\chakram.js:12:44<br>    at _fulfilled (node_modules\q\q.js:834:54)<br>    at self.promiseDispatch.done (node_modules\q\q.js:863:30)<br>    at Promise.promise.promiseDispatch (node_modules\q\q.js:796:13)<br>    at node_modules\q\q.js:604:44<br>    at runSingle (node_modules\q\q.js:137:13)<br>    at flush (node_modules\q\q.js:125:13)<br>    at _combinedTickCallback (internal/process/next_tick.js:67:7)<br>    at process._tickCallback (internal/process/next_tick.js:98:9)</span></pre>
+          </div>
+        </div>            <div id="8f0dd3f8-6fec-4fff-972e-a7d4a75b6ffb" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Sub 2 numbers 1000 - 500
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8f0dd3f8-6fec-4fff-972e-a7d4a75b6ffb > .test-code.collapse">Code</button>
+              <span class="test-duration ">1.6 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">TypeError: Cannot read property &#x27;statusCode&#x27; of undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#8f0dd3f8-6fec-4fff-972e-a7d4a75b6ffb > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><span class="hljs small">Difference between Expected(+) and Actual(-):
+        TypeError: Cannot read property 'statusCode' of undefined
+        
+        Expected:
+        undefined
+        
+        Actual:
+        undefined
+        
+        Stack:
+        TypeError: Cannot read property 'statusCode' of undefined<br>    at .&lt;anonymous&gt; (node_modules\chakram\lib\assertions\statuscode.js:15:44)<br>    at ctx.(anonymous function) (node_modules\chai\lib\chai\utils\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (node_modules\chai-as-promised\lib\chai-as-promised.js:296:33)<br>    at .&lt;anonymous&gt; (node_modules\chai-as-promised\lib\chai-as-promised.js:255:21)<br>    at ctx.(anonymous function) [as status] (node_modules\chai\lib\chai\utils\overwriteMethod.js:49:33)<br>    at tests\chakram.js:23:44<br>    at _fulfilled (node_modules\q\q.js:834:54)<br>    at self.promiseDispatch.done (node_modules\q\q.js:863:30)<br>    at Promise.promise.promiseDispatch (node_modules\q\q.js:796:13)<br>    at node_modules\q\q.js:604:44<br>    at runSingle (node_modules\q\q.js:137:13)<br>    at flush (node_modules\q\q.js:125:13)<br>    at _combinedTickCallback (internal/process/next_tick.js:67:7)<br>    at process._tickCallback (internal/process/next_tick.js:98:9)</span></pre>
+          </div>
+        </div>            <div id="293d9c8f-e556-4564-b4a1-007734a3390a" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Mult 2 numbers 1000 * 500
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#293d9c8f-e556-4564-b4a1-007734a3390a > .test-code.collapse">Code</button>
+              <span class="test-duration ">1.5 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">TypeError: Cannot read property &#x27;statusCode&#x27; of undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#293d9c8f-e556-4564-b4a1-007734a3390a > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><span class="hljs small">Difference between Expected(+) and Actual(-):
+        TypeError: Cannot read property 'statusCode' of undefined
+        
+        Expected:
+        undefined
+        
+        Actual:
+        undefined
+        
+        Stack:
+        TypeError: Cannot read property 'statusCode' of undefined<br>    at .&lt;anonymous&gt; (node_modules\chakram\lib\assertions\statuscode.js:15:44)<br>    at ctx.(anonymous function) (node_modules\chai\lib\chai\utils\addMethod.js:41:25)<br>    at doAsserterAsyncAndAddThen (node_modules\chai-as-promised\lib\chai-as-promised.js:296:33)<br>    at .&lt;anonymous&gt; (node_modules\chai-as-promised\lib\chai-as-promised.js:255:21)<br>    at ctx.(anonymous function) [as status] (node_modules\chai\lib\chai\utils\overwriteMethod.js:49:33)<br>    at tests\chakram.js:36:44<br>    at _fulfilled (node_modules\q\q.js:834:54)<br>    at self.promiseDispatch.done (node_modules\q\q.js:863:30)<br>    at Promise.promise.promiseDispatch (node_modules\q\q.js:796:13)<br>    at node_modules\q\q.js:604:44<br>    at runSingle (node_modules\q\q.js:137:13)<br>    at flush (node_modules\q\q.js:125:13)<br>    at _combinedTickCallback (internal/process/next_tick.js:67:7)<br>    at process._tickCallback (internal/process/next_tick.js:98:9)</span></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="589ef462-2f65-4c60-abc7-bb3580b584f5" class="suite has-tests has-failed">
+            <h3 class="suite-title">Api complex operations</h3>
+            <h5 class="suite-filename">\tests\chakram.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="589ef462-2f65-4c60-abc7-bb3580b584f5" class="suite-chart" width="50" height="50" data-total-passes="0" data-total-failures="2" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">2.5 s</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">0</li>
+                <li class="suite-summary-item failed">2</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#589ef462-2f65-4c60-abc7-bb3580b584f5-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="589ef462-2f65-4c60-abc7-bb3580b584f5-test-list" class="list-group test-list collapse in">
+                    <div id="2071ee81-e529-47e6-b884-237d0b4f5478" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              Sum 2 numbers (1000 + 500) and multiply result by num3 (1000500 * 200 )
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#2071ee81-e529-47e6-b884-237d0b4f5478 > .test-code.collapse">Code</button>
+              <span class="test-duration ">1.3 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">TypeError: Cannot read property &#x27;result&#x27; of undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#2071ee81-e529-47e6-b884-237d0b4f5478 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><span class="hljs small">Difference between Expected(+) and Actual(-):
+        Cannot read property 'result' of undefined
+        
+        Expected:
+        undefined
+        
+        Actual:
+        undefined
+        
+        Stack:
+        <span class="hljs-built_in">TypeError</span>: Cannot read property <span class="hljs-string">'result'</span> <span class="hljs-keyword">of</span> <span class="hljs-literal">undefined</span><br>    at tests\chakram.js:<span class="hljs-number">56</span>:<span class="hljs-number">40</span><br>    at _fulfilled (node_modules\q\q.js:<span class="hljs-number">834</span>:<span class="hljs-number">54</span>)<br>    at self.promiseDispatch.done (node_modules\q\q.js:<span class="hljs-number">863</span>:<span class="hljs-number">30</span>)<br>    at <span class="hljs-built_in">Promise</span>.promise.promiseDispatch (node_modules\q\q.js:<span class="hljs-number">796</span>:<span class="hljs-number">13</span>)<br>    at node_modules\q\q.js:<span class="hljs-number">604</span>:<span class="hljs-number">44</span><br>    at runSingle (node_modules\q\q.js:<span class="hljs-number">137</span>:<span class="hljs-number">13</span>)<br>    at flush (node_modules\q\q.js:<span class="hljs-number">125</span>:<span class="hljs-number">13</span>)<br>    at _combinedTickCallback (internal/process/next_tick.js:<span class="hljs-number">67</span>:<span class="hljs-number">7</span>)<br>    at process._tickCallback (internal/process/next_tick.js:<span class="hljs-number">98</span>:<span class="hljs-number">9</span>)</span></pre>
+          </div>
+        </div>            <div id="4e83cf31-e894-4695-a0c1-84555fee859b" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              multiplies 2 numbers(1000 * 500) and subtract result by num3(500000 - 200 )
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4e83cf31-e894-4695-a0c1-84555fee859b > .test-code.collapse">Code</button>
+              <span class="test-duration ">1.2 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">TypeError: Cannot read property &#x27;result&#x27; of undefined
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#4e83cf31-e894-4695-a0c1-84555fee859b > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small"></code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><span class="hljs small">Difference between Expected(+) and Actual(-):
+        Cannot read property 'result' of undefined
+        
+        Expected:
+        undefined
+        
+        Actual:
+        undefined
+        
+        Stack:
+        <span class="hljs-built_in">TypeError</span>: Cannot read property <span class="hljs-string">'result'</span> <span class="hljs-keyword">of</span> <span class="hljs-literal">undefined</span><br>    at tests\chakram.js:<span class="hljs-number">74</span>:<span class="hljs-number">40</span><br>    at _fulfilled (node_modules\q\q.js:<span class="hljs-number">834</span>:<span class="hljs-number">54</span>)<br>    at self.promiseDispatch.done (node_modules\q\q.js:<span class="hljs-number">863</span>:<span class="hljs-number">30</span>)<br>    at <span class="hljs-built_in">Promise</span>.promise.promiseDispatch (node_modules\q\q.js:<span class="hljs-number">796</span>:<span class="hljs-number">13</span>)<br>    at node_modules\q\q.js:<span class="hljs-number">604</span>:<span class="hljs-number">44</span><br>    at runSingle (node_modules\q\q.js:<span class="hljs-number">137</span>:<span class="hljs-number">13</span>)<br>    at flush (node_modules\q\q.js:<span class="hljs-number">125</span>:<span class="hljs-number">13</span>)<br>    at _combinedTickCallback (internal/process/next_tick.js:<span class="hljs-number">67</span>:<span class="hljs-number">7</span>)<br>    at process._tickCallback (internal/process/next_tick.js:<span class="hljs-number">98</span>:<span class="hljs-number">9</span>)</span></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2015.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
